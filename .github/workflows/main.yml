@@ -33,5 +33,8 @@ jobs:
       - name: Run a multi-line script
         run: |
          brew tap tehzz/n64-dev
-        
+         brew install mips64-elf-binutils
+         brew install mips64-elf-gcc
+         brew install mips-linux-gnu-gcc
+         brew install qemu-irix
         
