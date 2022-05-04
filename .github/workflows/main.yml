@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,8 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          cd Formula
-          ruby mips64-elf-binutils.rb
-          ruby mips64-elf-gcc.rb
-          ruby mips-linux-gnu-binutils.rb
-          ruby 
+        brew tap tehzz/n64-dev
+        
+        
